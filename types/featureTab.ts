@@ -1,8 +1,7 @@
 export type FeatureTab = {
-  id: string;
+  id: number;
   title: string;
-  desc1: string;
-  desc2: string;
+  desc: any;
   image: string;
   imageDark: string;
 };

@@ -14,40 +14,22 @@ const menuData: Menu[] = [
     path: "/#features",
   },
   {
-    id: 2.1,
-    title: "Blog",
+    id: 2.3,
+    title: "Usecases",
     newTab: false,
-    path: "/blog",
+    path: "/#Usecases",
   },
   {
-    id: 2.3,
-    title: "Docs",
+    id: 2.1,
+    title: "Blogs",
     newTab: false,
-    path: "/docs",
-  },
+    path: "/blog",
+  }, 
   {
     id: 3,
     title: "Pages",
     newTab: false,
     submenu: [
-      {
-        id: 31,
-        title: "Blog Grid",
-        newTab: false,
-        path: "/blog",
-      },
-      {
-        id: 34,
-        title: "Sign In",
-        newTab: false,
-        path: "/auth/signin",
-      },
-      {
-        id: 35,
-        title: "Sign Up",
-        newTab: false,
-        path: "/auth/signup",
-      },
       {
         id: 35,
         title: "Docs",

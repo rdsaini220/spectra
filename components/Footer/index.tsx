@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import Image from "next/image";
 
 const Footer = () => {
@@ -28,22 +29,25 @@ const Footer = () => {
                 viewport={{ once: true }}
                 className="animate_top w-1/2 lg:w-1/4"
               >
-                <a href="index.html" className="relative">
-                  <Image
-                    width={110}
+                <Link href="/" className="relative">
+                  {/* <Image
+                    width={90}
                     height={80}
-                    src="/images/logo/logo-light.svg"
+                    src="/images/logo/logo.png"
                     alt="Logo"
                     className="dark:hidden"
                   />
                   <Image
-                    width={110}
+                    width={90}
                     height={80}
-                    src="/images/logo/logo-dark.svg"
+                    src="/images/logo/logo.png"
                     alt="Logo"
                     className="hidden dark:block"
-                  />
-                </a>
+                  /> */}
+                  <h1 className="pr-16 text-xl font-bold text-black dark:text-white xl:text-hero ">
+                    sp<span className="text-primary">ec</span>tra
+                  </h1>
+                </Link>
 
                 <p className="mb-10 mt-5">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -56,7 +60,7 @@ const Footer = () => {
                   href="#"
                   className="text-itemtitle font-medium text-black dark:text-white"
                 >
-                  hello@solid.com
+                  hello@starlly.com
                 </a>
               </motion.div>
 
@@ -265,19 +269,19 @@ const Footer = () => {
             >
               <ul className="flex items-center gap-8">
                 <li>
-                  <a href="#" className="hover:text-primary">
+                  <Link href="/" className="hover:text-primary">
                     English
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-primary">
+                  <Link href="/" className="hover:text-primary">
                     Privacy Policy
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-primary">
+                  <Link href="/support" className="hover:text-primary">
                     Support
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </motion.div>
@@ -301,7 +305,7 @@ const Footer = () => {
               className="animate_top"
             >
               <p>
-                &copy; {new Date().getFullYear()} Solid. All rights reserved
+                &copy; {new Date().getFullYear()} <b>Spectra</b>. All rights reserved
               </p>
             </motion.div>
 

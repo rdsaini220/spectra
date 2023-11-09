@@ -38,20 +38,23 @@ const Header = () => {
       <div className="relative mx-auto max-w-c-1390 items-center justify-between px-4 md:px-8 xl:flex 2xl:px-0">
         <div className="flex w-full items-center justify-between xl:w-1/4">
           <Link href="/">
-            <Image
-              src="/images/logo/logo-dark.svg"
+              <h1 className="pr-16 text-xl font-bold text-black dark:text-white xl:text-hero ">
+                sp<span className="text-primary">ec</span>tra
+              </h1>
+            {/* <Image
+              src="/images/logo/logo.png"
               alt="logo"
-              width={119.03}
+              width={90}
               height={30}
               className="hidden w-full dark:block"
             />
             <Image
-              src="/images/logo/logo-light.svg"
+              src="/images/logo/logo.png"
               alt="logo"
-              width={119.03}
+              width={90}
               height={30}
               className="w-full dark:hidden"
-            />
+            /> */}
           </Link>
 
           {/* <!-- Hamburger Toggle BTN --> */}
@@ -152,21 +155,13 @@ const Header = () => {
           </nav>
 
           <div className="mt-7 flex items-center gap-6 xl:mt-0 xl:ms-5">
-            <ThemeToggler />
-
-            {/* <Link
-              href="https://github.com/NextJSTemplates/solid-nextjs"
-              className="text-regular font-medium text-waterloo hover:text-primary"
-            >
-              GitHub Repo 🌟
-            </Link>
-
+            {/* <ThemeToggler /> */}
             <Link
-              href="https://nextjstemplates.com/templates/solid"
+              href="/"
               className="flex items-center justify-center rounded-full bg-primary px-7.5 py-2.5 text-regular text-white duration-300 ease-in-out hover:bg-primaryho"
             >
-              Get Pro 🔥
-            </Link> */}
+              Free Demo
+            </Link>
           </div>
         </div>
       </div>
