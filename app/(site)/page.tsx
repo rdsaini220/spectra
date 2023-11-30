@@ -12,6 +12,10 @@ import Pricing from "@/components/Pricing";
 import Contact from "@/components/Contact";
 import Blog from "@/components/Blog";
 import Testimonial from "@/components/Testimonial";
+import Activities from "@/components/Activities";
+import Why from "@/components/Why";
+import PostSale from "@/components/PostSale";
+import CardsBrands from "@/components/CardsBrands";
 
 export const metadata: Metadata = {
   title: "Spectra",
@@ -23,18 +27,22 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <Brands />
-      <Feature />
+      <Activities />
+      <Why />
+      {/* <Brands /> */}
+      <CardsBrands />
+      {/* <Feature /> */}
+      <PostSale />
       <About />
-      <FeaturesTab />
+      <Testimonial />
+      {/* <FeaturesTab /> */}
       {/* <FunFact /> */}
-      <Integration />
-      {/* <CTA />
-      <FAQ />
-      <Testimonial /> */}
-      <Pricing />
+      {/* <Integration />        */}
+      {/* <FAQ /> */}
+      {/* <Pricing /> */}
       <Contact />
-      <Blog />
+      {/* <Blog /> */}
+      <CTA />
     </main>
   );
 }

@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Header CSS */
+/* .header-link{
+  color: hsla(216,9.803921568627452%,10%,1);
+  font-weight: 500
+} */
 /* third-party libraries CSS */
 
 .testimonial-01 .swiper-pagination-bullet {
@@ -125,3 +130,5 @@ pre {
 .active-tab {
   @apply bg-stroke text-black dark:bg-blackho dark:text-white;
 }
+
+

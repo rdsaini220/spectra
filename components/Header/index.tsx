@@ -113,7 +113,7 @@ const Header = () => {
                     <>
                       <button
                         onClick={() => setDropdownToggler(!dropdownToggler)}
-                        className="flex cursor-pointer items-center justify-between gap-3 hover:text-primary"
+                        className="flex cursor-pointer items-center justify-between gap-3 hover:text-primary header-link"
                       >
                         {menuItem.title}
                         <span>
@@ -131,7 +131,7 @@ const Header = () => {
                         className={`dropdown ${dropdownToggler ? "flex" : ""}`}
                       >
                         {menuItem.submenu.map((item, key) => (
-                          <li key={key} className="hover:text-primary">
+                          <li key={key} className="hover:text-primary header-link">
                             <Link href={item.path || "#"}>{item.title}</Link>
                           </li>
                         ))}
@@ -143,7 +143,7 @@ const Header = () => {
                       className={
                         pathUrl === menuItem.path
                           ? "text-primary hover:text-primary"
-                          : "hover:text-primary"
+                          : "hover:text-primary header-link"
                       }
                     >
                       {menuItem.title}
@@ -160,7 +160,7 @@ const Header = () => {
               href="/"
               className="flex items-center justify-center rounded-full bg-primary px-7.5 py-2.5 text-regular text-white duration-300 ease-in-out hover:bg-primaryho"
             >
-              Free Demo
+              Book A Demo
             </Link>
           </div>
         </div>

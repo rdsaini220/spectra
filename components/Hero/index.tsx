@@ -19,9 +19,9 @@ const Hero = () => {
                 🔥 Solid - A Complete SaaS Web Template
               </h4> */}
               <h1 className="mb-5 pr-16 text-3xl font-bold text-black dark:text-white xl:text-hero ">
-                  Healthy Machines create 
+                  Maintenance and Services {' '}                               
                 <span className="relative inline-block before:absolute before:bottom-2.5 before:left-0 before:-z-1 before:h-3 before:w-full before:bg-titlebg dark:before:bg-titlebgdark ">
-                  Profitable Business
+                  on Auto-Mode   
                 </span>
               </h1>
               <p>Simple plug n play solution to monitor your machines remotely in real time, send alerts to the right team members</p>
@@ -60,12 +60,13 @@ const Hero = () => {
                   className="absolute -right-6.5 bottom-0 z-1"
                 />
                 <div className=" relative aspect-[700/444] w-full">
-                  <Image
+                  {/* <Image
                     className="shadow-solid-l dark:hidden"
                     src="/images/hero/hero-light.svg"
                     alt="Hero"
                     fill
-                  />
+                  /> */}
+                  <video className="shadow-solid-l dark:hidden" src="https://spectra.starllysolutions.com/static/media/spectra.59b8dd442668f5a61dea.mp4"></video>
                   <Image
                     className="hidden shadow-solid-l dark:block"
                     src="/images/hero/hero-dark.svg"
